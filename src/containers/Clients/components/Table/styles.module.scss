@@ -1,0 +1,10 @@
+.container {
+  overflow-y: scroll;
+  height: 100%;
+}
+.customerId {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 115px;
+  white-space: nowrap;
+}

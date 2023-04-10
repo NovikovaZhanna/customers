@@ -1,0 +1,39 @@
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+thead {
+  position: sticky;
+  top: 0;
+  margin-bottom: 8px;
+  background: rgba(238, 238, 238, 0.4);
+  z-index: 1;
+  backdrop-filter: blur(20px);
+}
+thead tr:hover {
+  background: unset;
+}
+th {
+  padding: 1rem;
+  font-size: 0.75rem;
+  word-wrap: break-word;
+}
+tr {
+  text-align: left;
+  outline: 0.75px dashed lightgray;
+  cursor: pointer;
+  user-select: none;
+  transition-duration: 0.3s;
+}
+tr:hover {
+  background: lightblue;
+}
+tr[data-selected="true"] {
+  background: lightblue;
+}
+td {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
